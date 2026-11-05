@@ -1,0 +1,4 @@
+{
+  "ext_name": { "message": "Shortlist และบันทึกทรัพย์สินสำหรับ Zillow & Redfin" },
+  "ext_desc": { "message": "ให้คะแนน บันทึก และสร้าง shortlist บ้านบน Zillow & Redfin เปรียบเทียบรายการโปรดแบบเคียงข้างและส่งออกเป็น CSV" }
+}

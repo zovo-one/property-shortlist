@@ -1,0 +1,247 @@
+/* ============================================================================
+ * popup.css — SURFACE-owned. Property Shortlist dashboard (copied to dist/css).
+ * Builds on zovo-base.css tokens/components. One hero (the shortlist count),
+ * one purple primary + one gold upgrade, 8px grid, hairline borders, dark-aware.
+ * ========================================================================== */
+
+.zovo-popup {
+  width: var(--zovo-popup-w);
+  max-height: var(--zovo-popup-maxh);
+  overflow-y: auto;
+  background: var(--zovo-surface);
+}
+
+/* Brand mark in the header */
+.ps-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: var(--zovo-radius-input);
+  color: #fff;
+  background: linear-gradient(135deg, var(--zovo-primary), var(--zovo-primary-light));
+}
+.zovo-header .zovo-badge { margin-left: auto; }
+
+/* Icon-only buttons (settings, open, remove) */
+.ps-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: var(--zovo-radius-btn);
+  background: transparent;
+  color: var(--zovo-text-secondary);
+  cursor: pointer;
+  transition: background var(--zovo-transition), color var(--zovo-transition);
+}
+.ps-icon-btn:hover { background: var(--zovo-surface-2); color: var(--zovo-text); }
+.ps-icon-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--zovo-bg), 0 0 0 4px var(--zovo-primary);
+}
+.ps-icon-btn--danger:hover { color: var(--zovo-error); }
+
+/* Hero progress bar spacing */
+.ps-hero-bar { max-width: 220px; margin: var(--zovo-space-4) auto var(--zovo-space-3); }
+
+/* Toolbar: sort + view segmented control */
+.ps-toolbar {
+  display: flex;
+  align-items: center;
+  gap: var(--zovo-space-3);
+  padding: 0 var(--zovo-space-4) var(--zovo-space-3);
+}
+.ps-select {
+  flex: 1;
+  min-width: 0;
+  height: 34px;
+  padding: 0 28px 0 10px;
+  font-family: inherit;
+  font-size: var(--zovo-fs-caption);
+  color: var(--zovo-text);
+  background: var(--zovo-bg);
+  border: 1px solid var(--zovo-border);
+  border-radius: var(--zovo-radius-btn);
+  cursor: pointer;
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--zovo-text-secondary) 50%),
+    linear-gradient(135deg, var(--zovo-text-secondary) 50%, transparent 50%);
+  background-position: right 12px center, right 7px center;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+}
+.ps-select:focus-visible {
+  outline: none;
+  border-color: var(--zovo-primary);
+  box-shadow: 0 0 0 3px var(--zovo-primary-50);
+}
+
+.ps-seg {
+  display: inline-flex;
+  padding: 2px;
+  gap: 2px;
+  background: var(--zovo-surface-2);
+  border-radius: var(--zovo-radius-btn);
+}
+.ps-seg__btn {
+  padding: 6px 12px;
+  font-family: inherit;
+  font-size: var(--zovo-fs-caption);
+  font-weight: var(--zovo-fw-medium);
+  color: var(--zovo-text-secondary);
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background var(--zovo-transition), color var(--zovo-transition);
+}
+.ps-seg__btn.is-active {
+  color: var(--zovo-text);
+  background: var(--zovo-bg);
+  box-shadow: var(--zovo-shadow-sm);
+}
+.ps-seg__btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--zovo-surface-2), 0 0 0 4px var(--zovo-primary);
+}
+
+/* Home list */
+.ps-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--zovo-space-2);
+  padding: 0 var(--zovo-space-4);
+}
+.ps-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  align-items: center;
+  gap: var(--zovo-space-3);
+  padding: var(--zovo-space-3);
+  border: 1px solid var(--zovo-border);
+  border-radius: var(--zovo-radius-card);
+  background: var(--zovo-bg);
+  transition: border-color var(--zovo-transition);
+}
+.ps-row:hover { border-color: var(--zovo-primary-light); }
+.ps-row__body { min-width: 0; }
+.ps-row__addr {
+  font-weight: var(--zovo-fw-medium);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ps-row__meta { font-size: var(--zovo-fs-caption); margin-top: 2px; }
+.ps-row__score {
+  font-size: var(--zovo-fs-caption);
+  letter-spacing: 1px;
+  color: var(--zovo-pro);
+  white-space: nowrap;
+}
+.ps-row__price {
+  font-weight: var(--zovo-fw-heading);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.ps-row__actions { display: inline-flex; gap: 2px; }
+
+/* Compare grid */
+.ps-cmp-wrap { padding: 0 var(--zovo-space-4); overflow-x: auto; }
+.ps-cmp {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--zovo-fs-caption);
+}
+.ps-cmp th, .ps-cmp td {
+  padding: 8px 10px;
+  text-align: right;
+  border-bottom: 1px solid var(--zovo-border);
+  white-space: nowrap;
+}
+.ps-cmp thead th {
+  font-size: 10.5px;
+  font-weight: var(--zovo-fw-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--zovo-text-secondary);
+}
+.ps-cmp th[scope='row'], .ps-cmp__home {
+  text-align: left;
+  font-weight: var(--zovo-fw-medium);
+  max-width: 130px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ps-cmp .is-best {
+  color: var(--zovo-success);
+  font-weight: var(--zovo-fw-heading);
+}
+
+/* Empty state art tile */
+.ps-empty__art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto var(--zovo-space-4);
+  border-radius: 20px;
+  color: var(--zovo-primary);
+  background: var(--zovo-primary-50);
+}
+
+/* Actions + export */
+.ps-actions { padding: var(--zovo-space-4); }
+.ps-export { position: relative; }
+.ps-lock {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  margin-left: 6px;
+  padding: 1px 6px;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--zovo-pro);
+  border: 1px solid var(--zovo-pro);
+  border-radius: var(--zovo-radius-pill);
+}
+
+/* Footer */
+.zovo-footer { position: sticky; bottom: 0; background: var(--zovo-surface); }
+.ps-foot-links { display: inline-flex; align-items: center; gap: var(--zovo-space-2); }
+.ps-linkbtn {
+  padding: 0;
+  font-family: inherit;
+  font-size: var(--zovo-fs-caption);
+  color: var(--zovo-text-secondary);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.ps-linkbtn:hover { color: var(--zovo-primary); text-decoration: underline; }
+.ps-dot { color: var(--zovo-border); }
+.ps-getpro { min-height: 32px; padding: 6px 14px; font-size: var(--zovo-fs-caption); }
+
+/* Loading skeleton */
+.ps-skeleton { padding: var(--zovo-space-5); display: flex; flex-direction: column; gap: var(--zovo-space-3); }
+.ps-skel-hero { height: 96px; }
+.ps-skel-row { height: 56px; }
+.ps-skel-hero, .ps-skel-row {
+  border-radius: var(--zovo-radius-card);
+  background: linear-gradient(90deg, var(--zovo-surface-2) 25%, var(--zovo-surface) 50%, var(--zovo-surface-2) 75%);
+  background-size: 200% 100%;
+  animation: ps-shimmer 1.3s ease-in-out infinite;
+}
+@keyframes ps-shimmer {
+  from { background-position: 200% 0; }
+  to { background-position: -200% 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ps-skel-hero, .ps-skel-row { animation: none; }
+}

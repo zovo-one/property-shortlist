@@ -1,0 +1,129 @@
+/* ============================================================================
+ * onboarding.css — SURFACE-owned. First-run welcome (copied to dist/css).
+ * Calm full-page flow on the zovo-base token system: one hero headline, three
+ * value cards, three steps, an honest Pro teaser, a solo-dev trust line.
+ * Generous whitespace, 8px grid, real dark mode.
+ * ========================================================================== */
+
+.zovo-onboarding {
+  min-width: 320px;
+  color: var(--zovo-text);
+  background:
+    radial-gradient(1100px 460px at 50% -140px, var(--zovo-primary-50), transparent 70%),
+    var(--zovo-bg);
+}
+
+.ob-page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: var(--zovo-space-8) var(--zovo-space-5) 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+/* Hero */
+.ob-hero { text-align: center; padding-top: var(--zovo-space-6); }
+.ob-eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--zovo-primary);
+}
+.ob-h1 {
+  margin: var(--zovo-space-3) auto 0;
+  max-width: 16ch;
+  font-size: clamp(30px, 5vw, 46px);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+}
+.ob-lede {
+  margin: var(--zovo-space-4) auto 0;
+  max-width: 54ch;
+  font-size: var(--zovo-fs-subheading);
+  color: var(--zovo-text-secondary);
+}
+.ob-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--zovo-space-3);
+  justify-content: center;
+  margin-top: var(--zovo-space-6);
+}
+.ob-hint { margin: var(--zovo-space-4) 0 0; font-size: var(--zovo-fs-caption); }
+
+/* Sections */
+.ob-section { display: flex; flex-direction: column; gap: var(--zovo-space-5); }
+.ob-section__label { text-align: center; margin: 0; }
+
+/* Value cards */
+.ob-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--zovo-space-4); }
+@media (max-width: 640px) { .ob-cards { grid-template-columns: 1fr; } }
+.ob-card {
+  padding: var(--zovo-space-5);
+  border: 1px solid var(--zovo-border);
+  border-radius: var(--zovo-radius-card);
+  background: var(--zovo-bg);
+  transition: transform var(--zovo-transition), border-color var(--zovo-transition), box-shadow var(--zovo-transition);
+}
+.ob-card:hover { transform: translateY(-2px); border-color: var(--zovo-primary-light); box-shadow: var(--zovo-shadow); }
+.ob-card__ic {
+  display: flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px; margin-bottom: var(--zovo-space-4);
+  border-radius: 12px;
+  color: var(--zovo-primary);
+  background: var(--zovo-primary-50);
+}
+.ob-card__title { margin: 0 0 var(--zovo-space-2); font-size: var(--zovo-fs-subheading); font-weight: var(--zovo-fw-heading); }
+.ob-card__text { margin: 0; font-size: var(--zovo-fs-body); }
+
+/* Steps */
+.ob-steps { list-style: none; counter-reset: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--zovo-space-4); max-width: 560px; align-self: center; width: 100%; }
+.ob-step { display: flex; gap: var(--zovo-space-4); align-items: flex-start; }
+.ob-step__num {
+  flex: 0 0 auto;
+  display: flex; align-items: center; justify-content: center;
+  width: 30px; height: 30px; border-radius: 50%;
+  font-size: var(--zovo-fs-caption); font-weight: 700;
+  color: #fff; background: var(--zovo-primary);
+}
+.ob-step__title { font-weight: var(--zovo-fw-heading); }
+.ob-step__text { font-size: var(--zovo-fs-body); margin-top: 2px; }
+
+/* Pro teaser */
+.ob-pro {
+  border: 1px solid color-mix(in srgb, var(--zovo-pro) 32%, var(--zovo-border));
+  background: linear-gradient(180deg, color-mix(in srgb, var(--zovo-pro) 6%, var(--zovo-bg)), var(--zovo-bg));
+  padding: var(--zovo-space-6);
+}
+.ob-pro__eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; color: var(--zovo-pro); }
+.ob-pro__title { margin: var(--zovo-space-2) 0 var(--zovo-space-4); font-size: var(--zovo-fs-heading); font-weight: 700; letter-spacing: -0.01em; }
+.ob-pro__list { list-style: none; margin: 0 0 var(--zovo-space-5); padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--zovo-space-3); }
+@media (max-width: 560px) { .ob-pro__list { grid-template-columns: 1fr; } }
+.ob-pro__list li { display: flex; align-items: flex-start; gap: 8px; font-size: var(--zovo-fs-body); }
+.ob-pro__chk { flex: 0 0 auto; margin-top: 3px; color: var(--zovo-success); }
+.ob-pro__foot { display: flex; flex-wrap: wrap; align-items: center; gap: var(--zovo-space-4); }
+.ob-pro__trial { font-size: var(--zovo-fs-caption); }
+
+/* Trust */
+.ob-trust { text-align: center; display: flex; flex-direction: column; gap: var(--zovo-space-4); align-items: center; }
+.ob-trust__badges { display: flex; flex-wrap: wrap; gap: var(--zovo-space-2); justify-content: center; }
+.ob-chip {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 5px 12px; font-size: var(--zovo-fs-caption); font-weight: var(--zovo-fw-medium);
+  color: var(--zovo-text); background: var(--zovo-surface);
+  border: 1px solid var(--zovo-border); border-radius: var(--zovo-radius-pill);
+}
+.ob-chip__ic { color: var(--zovo-success); }
+.ob-trust__note { max-width: 56ch; margin: 0; font-size: var(--zovo-fs-body); }
+
+/* Footer */
+.ob-foot { display: flex; flex-direction: column; align-items: center; gap: var(--zovo-space-4); }
+.ob-foot__link { color: var(--zovo-text-secondary); text-decoration: none; font-size: var(--zovo-fs-caption); }
+.ob-foot__link:hover { color: var(--zovo-primary); text-decoration: underline; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ob-card:hover { transform: none; }
+}

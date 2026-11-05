@@ -1,0 +1,337 @@
+{
+  "ext_name": {
+    "message": "Property Shortlist & Notes for Zillow & Redfin",
+    "description": "Extension name shown in the Chrome Web Store and toolbar."
+  },
+  "ext_desc": {
+    "message": "Score, note and shortlist homes right on Zillow & Redfin. Compare your favorites side-by-side and export to CSV.",
+    "description": "Extension description shown in the Chrome Web Store."
+  },
+  "popup_title": {
+    "message": "Property Shortlist"
+  },
+  "popup_untitled_home": {
+    "message": "Saved home"
+  },
+  "popup_open_settings": {
+    "message": "Open settings"
+  },
+  "popup_hero_label": {
+    "message": "Homes shortlisted"
+  },
+  "popup_slots_left": {
+    "message": "$1 of $2 slots left on Free"
+  },
+  "popup_cap_reached": {
+    "message": "Free shortlist is full — Pro removes the cap"
+  },
+  "popup_unlimited": {
+    "message": "Unlimited shortlist · Pro"
+  },
+  "popup_sort_label": {
+    "message": "Sort homes"
+  },
+  "popup_sort_recent": {
+    "message": "Recently added"
+  },
+  "popup_sort_price": {
+    "message": "Price: low to high"
+  },
+  "popup_sort_score": {
+    "message": "Score: high to low"
+  },
+  "popup_view_label": {
+    "message": "View mode"
+  },
+  "popup_view_list": {
+    "message": "List"
+  },
+  "popup_view_compare": {
+    "message": "Compare"
+  },
+  "popup_score": {
+    "message": "Score"
+  },
+  "popup_open": {
+    "message": "Open"
+  },
+  "popup_remove": {
+    "message": "Remove"
+  },
+  "popup_col_home": {
+    "message": "Home"
+  },
+  "popup_col_price": {
+    "message": "Price"
+  },
+  "popup_col_specs": {
+    "message": "Beds/Baths"
+  },
+  "popup_col_score": {
+    "message": "Score"
+  },
+  "popup_empty_title": {
+    "message": "Your shortlist is empty"
+  },
+  "popup_empty_text": {
+    "message": "Open a Zillow or Redfin listing, give it a score, then tap ♥ Shortlist. Saved homes show up here."
+  },
+  "popup_export": {
+    "message": "Export shortlist to CSV"
+  },
+  "popup_manage": {
+    "message": "Settings"
+  },
+  "popup_get_pro": {
+    "message": "Get Pro"
+  },
+  "opt_title": {
+    "message": "Property Shortlist & Notes"
+  },
+  "opt_subtitle": {
+    "message": "Settings & your saved search"
+  },
+  "opt_appearance": {
+    "message": "Appearance"
+  },
+  "opt_theme": {
+    "message": "Theme"
+  },
+  "opt_theme_help": {
+    "message": "Choose light, dark, or follow your system."
+  },
+  "opt_theme_system": {
+    "message": "System"
+  },
+  "opt_theme_light": {
+    "message": "Light"
+  },
+  "opt_theme_dark": {
+    "message": "Dark"
+  },
+  "opt_license": {
+    "message": "License"
+  },
+  "opt_lic_pro": {
+    "message": "Zovo Pro — active"
+  },
+  "opt_lic_free": {
+    "message": "Free plan"
+  },
+  "opt_lic_pro_note": {
+    "message": "Every feature unlocked. Thank you."
+  },
+  "opt_lic_free_note": {
+    "message": "Score, note and shortlist up to 5 homes."
+  },
+  "opt_lic_refresh": {
+    "message": "Refresh license"
+  },
+  "opt_upgrade": {
+    "message": "Upgrade to Pro"
+  },
+  "opt_criteria": {
+    "message": "Custom criteria"
+  },
+  "opt_criteria_locked": {
+    "message": "Score homes on weighted criteria — price, location, condition, commute — with a composite score."
+  },
+  "opt_criteria_help": {
+    "message": "Add the things that matter in your search. Each becomes a scorable column."
+  },
+  "opt_criterion_name": {
+    "message": "Criterion name"
+  },
+  "opt_remove_criterion": {
+    "message": "Remove criterion"
+  },
+  "opt_add_criterion": {
+    "message": "+ Add criterion"
+  },
+  "opt_new_criterion": {
+    "message": "New criterion"
+  },
+  "opt_unlock": {
+    "message": "Unlock in Pro"
+  },
+  "opt_data": {
+    "message": "Your data"
+  },
+  "opt_data_help": {
+    "message": "Everything stays on this device. Back it up or move it to another computer."
+  },
+  "opt_backup": {
+    "message": "Back up to JSON"
+  },
+  "opt_restore": {
+    "message": "Restore from JSON"
+  },
+  "opt_clear": {
+    "message": "Clear all saved data"
+  },
+  "opt_clear_confirm": {
+    "message": "Click again to erase everything"
+  },
+  "opt_save_failed": {
+    "message": "Could not save — free some space and retry."
+  },
+  "opt_license_refreshed": {
+    "message": "License refreshed."
+  },
+  "opt_backup_failed": {
+    "message": "Backup failed."
+  },
+  "opt_restore_ok": {
+    "message": "Backup restored."
+  },
+  "opt_restore_bad": {
+    "message": "That file is not a valid Zovo backup."
+  },
+  "opt_cleared": {
+    "message": "All saved homes and notes were cleared."
+  },
+  "opt_clear_failed": {
+    "message": "Could not clear data."
+  },
+  "opt_pro_eyebrow": {
+    "message": "Zovo Pro"
+  },
+  "opt_pro_pitch": {
+    "message": "Remove every limit for your whole house hunt."
+  },
+  "opt_pro_1": {
+    "message": "Unlimited shortlist"
+  },
+  "opt_pro_2": {
+    "message": "Weighted criteria + composite score"
+  },
+  "opt_pro_3": {
+    "message": "CSV export"
+  },
+  "opt_pro_4": {
+    "message": "Cross-device sync & JSON backup"
+  },
+  "opt_pro_lifetime": {
+    "message": "lifetime · one payment"
+  },
+  "opt_pro_trial": {
+    "message": "7-day free trial · no card"
+  },
+  "opt_pro_thanks": {
+    "message": "You're on Pro — thank you for supporting a solo developer."
+  },
+  "opt_get_pro": {
+    "message": "Get Pro"
+  },
+  "opt_help": {
+    "message": "Help"
+  },
+  "opt_privacy": {
+    "message": "Privacy"
+  },
+  "opt_footer": {
+    "message": "Zovo · No account, no scraping, no tracking. Built by Michael Lip."
+  },
+  "ob_eyebrow": {
+    "message": "Welcome to Zovo"
+  },
+  "ob_h1": {
+    "message": "Your house hunt, finally organized"
+  },
+  "ob_lede": {
+    "message": "Score homes, keep private notes, and build a side-by-side shortlist right on Zillow and Redfin — no account, no spreadsheet, no tracking."
+  },
+  "ob_browse_zillow": {
+    "message": "Browse Zillow"
+  },
+  "ob_browse_redfin": {
+    "message": "Browse Redfin"
+  },
+  "ob_hint": {
+    "message": "Open any listing detail page and the Zovo panel appears in the corner."
+  },
+  "ob_how": {
+    "message": "How it works"
+  },
+  "ob_c1_title": {
+    "message": "Score every home"
+  },
+  "ob_c1_text": {
+    "message": "Give each listing a 1–5 star score and a private note. It saves instantly and is still there when you come back."
+  },
+  "ob_c2_title": {
+    "message": "Build a shortlist"
+  },
+  "ob_c2_text": {
+    "message": "Tap ♥ to add a home. Price, beds, baths and sqft are pulled in automatically — no typing."
+  },
+  "ob_c3_title": {
+    "message": "Compare side by side"
+  },
+  "ob_c3_text": {
+    "message": "See your favorites in one grid, sort by price or score, and (with Pro) export the whole list to CSV."
+  },
+  "ob_start": {
+    "message": "Start in three steps"
+  },
+  "ob_s1": {
+    "message": "Open a Zillow or Redfin listing"
+  },
+  "ob_s1d": {
+    "message": "The panel appears in the bottom-right corner of any home detail page."
+  },
+  "ob_s2": {
+    "message": "Rate it and jot a note"
+  },
+  "ob_s2d": {
+    "message": "Click the stars, type what you liked. Everything autosaves to this device."
+  },
+  "ob_s3": {
+    "message": "Shortlist and compare"
+  },
+  "ob_s3d": {
+    "message": "Add your favorites, then open the popup to compare them side by side."
+  },
+  "ob_pro_eyebrow": {
+    "message": "When your search grows"
+  },
+  "ob_pro_title": {
+    "message": "Zovo Pro removes every limit"
+  },
+  "ob_pro_1": {
+    "message": "Unlimited shortlist — no 5-home cap"
+  },
+  "ob_pro_2": {
+    "message": "Custom weighted criteria + composite score"
+  },
+  "ob_pro_3": {
+    "message": "CSV export of your whole search"
+  },
+  "ob_pro_4": {
+    "message": "Cross-device sync & JSON backup"
+  },
+  "ob_pro_cta": {
+    "message": "See Pro — $$99 lifetime"
+  },
+  "ob_pro_trial": {
+    "message": "One payment, not a subscription · 7-day free trial, no card"
+  },
+  "ob_t1": {
+    "message": "No account"
+  },
+  "ob_t2": {
+    "message": "No scraping"
+  },
+  "ob_t3": {
+    "message": "No tracking"
+  },
+  "ob_t4": {
+    "message": "Stored on your device"
+  },
+  "ob_trust_note": {
+    "message": "Built in the open by Michael Lip, a solo developer. Questions? support@zovo.one — a real person answers."
+  },
+  "ob_done": {
+    "message": "Start browsing"
+  }
+}
